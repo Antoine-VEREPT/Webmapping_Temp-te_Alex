@@ -1,8 +1,82 @@
 <!doctype html>
+
 <html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <style></style>
+    <script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.8.13.custom.min.js"></script>
+    <script type="text/javascript" src="jquery.beforeafter-1.4.min.js"></script>
+    <script type="text/javascript">
+
+    $(function(){
+        $('#container').beforeAfter();
+    });
+    </script>
+    
+    <style>
+
+    html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color:#00a3a6;
+        }
+
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #f0f0f0;
+            text-align: center;
+            font-size: 45px;
+            padding-top: 100px;
+            padding-bottom: 20px;
+            margin: 0 auto;
+        }
+
+    h2 {
+          font-family:Verdana, Geneva, Tahoma, sans-serif ;
+          color:#f0f0f0;
+          text-align: center;
+          font-size: 25px;     
+        }
+    
+    h3 {
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #000000;
+          text-align: justify;
+          font-size: 15px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          padding-left: 70px;
+          padding-right: 70px;
+          background-color: #f0f0f0;
+
+        }
+
+    h4 {
+          font-family:Verdana, Geneva, Tahoma, sans-serif ;
+          color:#f0f0f0;
+          text-align: center;
+          font-size: 25px;     
+        }
+
+    .iframe-container {
+          display: flex;
+          flex-direction: column; 
+          align-items: center;
+          border: 8px solid #f0f0f0;
+          margin-bottom: 20px;
+          background-color: #f0f0f0;
+        }
+
+    
+
+    </style>
         
     <title></title>
 
@@ -10,17 +84,47 @@
 </head>
 <body></body>
 
-<h1>Carte des fermetures de routes et des vallées touchées par la tempête Alex</h1>
-<iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 130px;"></iframe>
+<img src="LogoInrae.png" style="float: right; height: 40px; margin-right: 50px; margin-bottom: 30px; padding-top: 10px;">
 
-<h1>Carte du cumul de pluie</h1>
-<iframe width="1280" height="720" src="https://antoine-verept.github.io/Cumuls_Pluies/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 130px;"></iframe>
+<h1>Tempête Alex - 2020</h1>
 
-<h1>Carte des communes reconnues en état de catastrophe naturelle (CatNat)</h1>
-<iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_CatNat/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 130px;"></iframe>
+<h4> ___________________________________________________________________________________ </h4>
 
-<h1>Carte comparative du PPRI et du passage de la tempête Alex</h1>
-<iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_PPRI/#16/44.0704/7.2576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left: 130px;"></iframe>
+<h2> Contexte météorologique </h2>
+
+<h3> Du 1er au 3 octobre 2020, la tempête Alex frappe la France d’ouest en est et bien plus largement l’Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 Km/h et de fortes pluies orageuses. Le 1er octobre Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluie-inondable et d’orages. Le département du Morbihan est quant à lui placé en vigilance rouge à cause des vents violents. La situation va rapidement évoluer car tôt dans la matinée du 2 octobre une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation. Cette vigilance rouge est justifiée par les prévisions météo qui annoncent de fort cumuls de pluie au niveau des Alpes-Maritimes.  </h3>
+
+<div id="container">
+    <div><img alt="befre" src="carte1.png" style="width: 1920 ; height: 1080;flex-direction: column; align-items: center; background-color: #f0f0f0; "/></div>
+    <div><img alt="after" src="carte2.png" style="width: 1920 ; height: 1080;flex-direction: column; align-items: center; background-color: #f0f0f0; "/></div>
+  </div>
+
+<h4> ___________________________________________________________________________________ </h4>
+
+<h2>Carte des fermetures de routes et des vallées touchées par la tempête Alex</h2>
+
+<div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h2>Carte du cumul de pluie</h2>
+
+<div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Cumuls_Pluies/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+
+<h2>Carte des communes reconnues en état de catastrophe naturelle (CatNat)</h2>
+
+<div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_CatNat/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h2>Carte comparative du PPRI et du passage de la tempête Alex</h2>
+
+<div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_PPRI/#16/44.0704/7.2576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 </body>
 </html>
