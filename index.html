@@ -44,29 +44,31 @@
           font-family: "Calibri", sans-serif;
           color: #000000;
           text-align: justify;
+          width: 50%;
           font-size: 20px;
           padding-top: 30px;
           padding-bottom: 30px;
-          padding-left: 70px;
-          padding-right: 70px;
-          background-color: #f0f0f0;
+          padding-left: 100px;
+          padding-right: 100px;
 
         }
 
-    h4 {
-          font-family:Verdana, Geneva, Tahoma, sans-serif ;
-          color:#f0f0f0;
-          text-align: center;
-          font-size: 25px;     
-        }
+    .flex-container {
+        display: flex;
+        align-items: stretch;  
+        margin-bottom: 20px;
+        background-color: #f0f0f0;
+    }
 
-   .iframe-container {
-          display: flex;
-          flex-direction: column; 
-          align-items: center;
-          margin-bottom: 20px;
-          background-color:#f0f0f0 ;
-        }
+    .iframe-container {
+        width: 65%; 
+        margin-right: 10px
+    }
+
+    .text-container {
+        width: 35%; 
+    }
+
 
     
 
@@ -82,49 +84,49 @@
 
 <h1>Tempête Alex - 2020</h1>
 
-<h4> ___________________________________________________________________________________ </h4>
-
 <h2> Contexte météorologique </h2>
 
-<h4> ___________________________________________________________________________________ </h4>
-
-<h3> Du 1er au 3 octobre 2020, la tempête Alex frappe la France d’ouest en est et bien plus largement l’Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 Km/h et de fortes pluies orageuses. Le 1er octobre Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluie-inondable et d’orages. Le département du Morbihan est quant à lui placé en vigilance rouge à cause des vents violents. La situation va rapidement évoluer car tôt dans la matinée du 2 octobre une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation. Cette vigilance rouge est justifiée par les prévisions météo qui annoncent de fort cumuls de pluie au niveau des Alpes-Maritimes.  </h3>
-
-<h2>Alerte de Météo France du premier et deuxième octobre 2020</h2>
-
-<div class="iframe-container">
-    <iframe width="1295" height="770" src="https://antoine-verept.github.io/Carte_Vigilance_Meteo/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="flex-container">
+    <div class="iframe-container">
+        <iframe width="1295" height="755" src="https://antoine-verept.github.io/Carte_Vigilance_Meteo/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h3> Du 1er au 3 octobre 2020, la tempête Alex frappe la France d’ouest en est et bien plus largement l’Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 Km/h et de fortes pluies orageuses. Le 1er octobre Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluie-inondable et d’orages. Le département du Morbihan est quant à lui placé en vigilance rouge à cause des vents violents. La situation va rapidement évoluer car tôt dans la matinée du 2 octobre une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation. Cette vigilance rouge est justifiée par les prévisions météo qui annoncent de fort cumuls de pluie au niveau des Alpes-Maritimes.  </h3>
 </div>
-
-<h4> ___________________________________________________________________________________ </h4>
 
 <h2>Retour sur l'évènement</h2>
 
-<h4> ___________________________________________________________________________________ </h4>
-
-<h2>Carte des fermetures de routes et des vallées touchées par la tempête Alex</h2>
-
-<div class="iframe-container">
-    <iframe width="1920" height="1080" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="flex-container">
+    <h3> Texte </h3>
+    <div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </div>
 
 <h2>Carte du cumul de pluie</h2>
 
-<div class="iframe-container">
-    <iframe width="1920" height="1080" src="https://antoine-verept.github.io/Cumuls_Pluies/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<div class="flex-container">
+    <div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Cumuls_Pluies/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3> Texte </h3>
 </div>
 
-<h2>Carte des communes reconnues en état de catastrophe naturelle (CatNat)</h2>
+<h2>Bilan de la catastrophe</h2>
 
-<div class="iframe-container">
-    <iframe width="1920" height="1080" src="https://antoine-verept.github.io/Carte_CatNat/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="flex-container">
+    <h3> Texte </h3>
+    <div class="iframe-container">
+    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_CatNat/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </div>
 
 <h2>Carte comparative du PPRI et du passage de la tempête Alex</h2>
 
-<div class="iframe-container">
-    <iframe width="1920" height="1080" src="https://antoine-verept.github.io/Carte_PPRI/#16/44.0704/7.2576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="flex-container">
+    <div class="iframe-container">
+    <iframe  width="1280" height="720" src="https://antoine-verept.github.io/Carte_PPRI/#16/44.0704/7.2576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h3> Texte  </h3>
 </div>
 
 </body>
