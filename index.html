@@ -1,158 +1,149 @@
-<!doctype html>
-
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="fr">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carré Divisé</title>
+<link rel="stylesheet" href="styles.css">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <style>
+<style>
 
-        html, body {
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;
-            background-color:#00a3a6 ;
-        }
+body, html {
+  height: 100%;
+  margin: 0.1%;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color:#00a3a6 ;
+}
 
-        h1 {
-            font-family:'Oswald', sans-serif;
+.container {
+  display: flex;
+  align-items: stretch;
+  padding: 1%;
+  max-zoom: 80%;
+
+}
+
+.text-section, .iframe-section {
+  box-sizing: border-box;
+}
+
+.text-section {
+  background-color: white;
+  border-radius: 0.75rem;
+  flex: 38%;
+  padding: 2%;
+  color: #00a3a6;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.iframe-section {
+  background-color: white;
+  border-radius: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex: 58%;
+  padding: 2%;
+  color: #00a3a6;
+  font-size: 24px;
+}
+
+iframe {
+  width: 1300px;
+  height: 740px;
+  box-sizing: border-box;
+}
+
+header {
+  font-family:'Oswald', sans-serif;
             color: #fff;
             text-align: center;
-            font-size: 75px;
-            padding-top: 250px;
-            padding-bottom: 250px;
+            height: 25%;
+            font-size: 36px;
+            padding-top: 5%;
+            padding-bottom: 5%;
             margin: 0 auto;
             background-image: url('Fond_Header.jpg');
             background-size: cover; 
             background-repeat: no-repeat;
             text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
-        }
+}
 
-    h2 {
-          font-family:Verdana, Geneva, Tahoma, sans-serif ;
-          color:#fff;
-          text-align: center;
-          font-size: 35px;
-          text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;   
-        }
-    
-    h3 {
-          font-family: "Calibri", sans-serif;
-          color: #00a3a6;
-          text-align: justify;
-          width: 50%;
-          font-size: 20px;
-          padding-top: 30px;
-          padding-bottom: 30px;
-          padding-left: 100px;
-          padding-right: 100px;
-
-        }
-
-    .flex-container {
-        display: flex;
-        align-items: stretch;  
-        margin-bottom: 20px;
-        background-color: #fff;
-    }
-
-    .iframe-container {
-        width: 60%; 
-        margin-right: 10px
-    }
-
-    .text-container {
-        width: 40%;
-    }
-
-    .centered-iframe {
-    width: 100%; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin-right: 0; 
-    }
+</style>
 
 
-    
-
-    </style>
-        
-    <title></title>
-
-    
 </head>
 <body>
 
-<img src="LogoInrae.png" style="float: right; height: 100px; margin-right: 50px; margin-bottom: 30px; padding-top: 10px;">
+ <header> 
 
-<h1>Tempête Alex - 2020</h1>
+  <img src="LogoInrae.png" style="float: right; height: 100px; margin-right: 50px; margin-bottom: 30px; padding-top: 10px;">
 
-<h2> Contexte météorologique </h2>
+  <h1>Tempête Alex - 2020</h1>
 
-<div class="flex-container">
-    <div class="iframe-container">
-        <iframe width="1295" height="755" src="https://antoine-verept.github.io/Carte_Vigilance_Meteo/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <h3> Du 1er au 3 octobre 2020, la tempête Alex frappe la France d'ouest en est et plus largement l'Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 km/h, et de fortes pluies orageuses.
+ </header>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Contexte météorologique</h1>
+      <p>Du 1er au 3 octobre 2020, la tempête Alex frappe la France d'ouest en est et plus largement l'Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 km/h, et de fortes pluies orageuses.
         <br><br>
         Le 1er octobre, Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluies-inondables et d'orages. Le département du Morbihan est quant à lui placé en vigilance rouge en raison des vents violents.
         <br><br>
         La situation va rapidement évoluer car tôt dans la matinée du 2 octobre, une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation.
         <br><br>
-        La carte ci-contre vous permet de naviguer entre l'alerte du 1er octobre et celle du 2 octobre de Météo France, afin de vous rendre compte de l'évolution de la tempête Alex.  </h3>
-</div>
-
-<h2>Retour sur l'évènement</h2>
-
-<div class="flex-container">
-    <h3> Texte </h3>
-    <div class="iframe-container">
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/6KXGI63qWHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-</div>
-
-<div class="flex-container">
-    <div class="iframe-container">
-        <iframe width="1080" height="700" src="https://antoine-verept.github.io/Timeline_Tempete_Alex/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        La carte ci-contre vous permet de naviguer entre l'alerte du 1er octobre et celle du 2 octobre de Météo France, afin de vous rendre compte de l'évolution de la tempête Alex. </p>
     </div>
-    <div class="iframe-container">
-    <iframe width="1200" height="720" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
+    <div class="iframe-section">
+      <h1>Alertes de Météo-France</h1>
+      <iframe src="https://antoine-verept.github.io/Carte_Vigilance_Meteo/" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="iframe-section">
+      <h1>Vidéo tempête Alex</h1>
+      <iframe src="https://www.youtube.com/embed/6KXGI63qWHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="text-section">
+      <h1>Retour sur l'évènement</h1>
+      <p>texte</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="text-section">
+    
+    </div>
+    <div class="iframe-section">
+      <h1>Evolution de la situation</h1>
+      <iframe src="https://antoine-verept.github.io/Carte_Vallees_Routes/" frameborder="0"></iframe>
+    </div>
+  </div>
 
 
-<h2>Carte du cumul de pluie</h2>
+  <div class="container">
+    <div class="iframe-section">
+      <h1>Vidéo tempête Alex</h1>
+      <iframe src="https://antoine-verept.github.io/Cumuls_Pluies/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="text-section">
+      <h1>Cumuls des pluies</h1>
+      <p>texte</p>
+    </div>
+  </div>
 
-<div class="flex-container">
-    <div class="iframe-container">
-    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Cumuls_Pluies/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<img src="leg_cumul.png" style="float: right; height: 500px; padding-top: 90px;">
-<h3> Texte </h3>
-</div>
-
-<h2>Bilan de la catastrophe</h2>
-
-<div class="flex-container">
-    <h3> Texte </h3>
-    <div class="iframe-container">
-    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_CatNat/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-
-<h2>Carte comparative du PPRI et du passage de la tempête Alex</h2>
-
-<div class="flex-container">
-    <div class="iframe-container">
-    <iframe  width="1280" height="720" src="https://antoine-verept.github.io/Carte_PPRI/#16/44.0704/7.2576" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<h3> Texte  </h3>
-</div>
+  <div class="container">
+    <div class="text-section">
+      <h1>Bilan de la catastrophe</h1>
+      <p>texte</p>
+    </div>
+    <div class="iframe-section">
+      <h1>Communes reconnues en état de catastrophe naturelle</h1>
+      <iframe src="https://antoine-verept.github.io/Carte_CatNat/" frameborder="0"></iframe>
+    </div>
+  </div>
 
 </body>
 </html>
