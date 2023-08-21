@@ -20,7 +20,7 @@
 
         h1 {
             font-family:'Oswald', sans-serif;
-            color: #f0f0f0;
+            color: #fff;
             text-align: center;
             font-size: 75px;
             padding-top: 250px;
@@ -34,7 +34,7 @@
 
     h2 {
           font-family:Verdana, Geneva, Tahoma, sans-serif ;
-          color:#f0f0f0;
+          color:#fff;
           text-align: center;
           font-size: 35px;
           text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;   
@@ -42,7 +42,7 @@
     
     h3 {
           font-family: "Calibri", sans-serif;
-          color: #000000;
+          color: #00a3a6;
           text-align: justify;
           width: 50%;
           font-size: 20px;
@@ -57,16 +57,24 @@
         display: flex;
         align-items: stretch;  
         margin-bottom: 20px;
-        background-color: #f0f0f0;
+        background-color: #fff;
     }
 
     .iframe-container {
-        width: 65%; 
+        width: 60%; 
         margin-right: 10px
     }
 
     .text-container {
-        width: 35%; 
+        width: 40%;
+    }
+
+    .centered-iframe {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 0; 
     }
 
 
@@ -78,7 +86,7 @@
 
     
 </head>
-<body></body>
+<body>
 
 <img src="LogoInrae.png" style="float: right; height: 100px; margin-right: 50px; margin-bottom: 30px; padding-top: 10px;">
 
@@ -90,7 +98,13 @@
     <div class="iframe-container">
         <iframe width="1295" height="755" src="https://antoine-verept.github.io/Carte_Vigilance_Meteo/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <h3> Du 1er au 3 octobre 2020, la tempête Alex frappe la France d’ouest en est et bien plus largement l’Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 Km/h et de fortes pluies orageuses. Le 1er octobre Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluie-inondable et d’orages. Le département du Morbihan est quant à lui placé en vigilance rouge à cause des vents violents. La situation va rapidement évoluer car tôt dans la matinée du 2 octobre une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation. Cette vigilance rouge est justifiée par les prévisions météo qui annoncent de fort cumuls de pluie au niveau des Alpes-Maritimes.  </h3>
+    <h3> Du 1er au 3 octobre 2020, la tempête Alex frappe la France d'ouest en est et plus largement l'Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 km/h, et de fortes pluies orageuses.
+        <br><br>
+        Le 1er octobre, Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluies-inondables et d'orages. Le département du Morbihan est quant à lui placé en vigilance rouge en raison des vents violents.
+        <br><br>
+        La situation va rapidement évoluer car tôt dans la matinée du 2 octobre, une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation.
+        <br><br>
+        La carte ci-contre vous permet de naviguer entre l'alerte du 1er octobre et celle du 2 octobre de Météo France, afin de vous rendre compte de l'évolution de la tempête Alex.  </h3>
 </div>
 
 <h2>Retour sur l'évènement</h2>
@@ -98,9 +112,19 @@
 <div class="flex-container">
     <h3> Texte </h3>
     <div class="iframe-container">
-    <iframe width="1280" height="720" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/6KXGI63qWHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 </div>
+
+<div class="flex-container">
+    <div class="iframe-container">
+        <iframe width="1080" height="700" src="https://antoine-verept.github.io/Timeline_Tempete_Alex/" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="iframe-container">
+    <iframe width="1200" height="720" src="https://antoine-verept.github.io/Carte_Vallees_Routes/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
 
 <h2>Carte du cumul de pluie</h2>
 
@@ -108,6 +132,7 @@
     <div class="iframe-container">
     <iframe width="1280" height="720" src="https://antoine-verept.github.io/Cumuls_Pluies/#9/43.9224/7.1772" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+<img src="leg_cumul.png" style="float: right; height: 500px; padding-top: 90px;">
 <h3> Texte </h3>
 </div>
 
