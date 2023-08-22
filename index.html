@@ -9,7 +9,7 @@
 
 body, html {
   height: 100%;
-  margin: 0.1%;
+  margin: 0%;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color:#00a3a6 ;
@@ -20,7 +20,7 @@ body, html {
   align-items: stretch;
   margin-left: auto;
   margin-right: auto;
-  padding: 1%;
+  padding-top: 3%;
   max-zoom: 80%;
   min-height: 1080px;
   max-height: 1080px;
@@ -64,15 +64,59 @@ header {
   font-family:'Oswald', sans-serif;
             color: #fff;
             text-align: center;
-            height: 25%;
+            height: 15%;
             font-size: 36px;
-            padding-top: 5%;
-            padding-bottom: 5%;
+            padding-top: 3%;
+            padding-bottom: 3%;
             margin: 0 auto;
             background-image: url('Fond_Header.jpg');
             background-size: cover; 
             background-repeat: no-repeat;
             text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+
+.navbar{
+    background-color: #275662;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-color: #000;
+    min-height: 70px;
+    max-height: 70px;
+
+}
+
+.logo{
+    line-height: 70px;
+}
+
+.navbar input, .nav-menu, .dropdown{
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.nav-menu{
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+.nav-menu a:hover, .show:hover{
+    color: gray;
 }
 
 </style>
@@ -83,25 +127,52 @@ header {
 
  <header> 
 
-  <img src="LogoInrae.png" style="float: right; height: 100px; margin-right: 50px; margin-bottom: 30px; padding-top: 10px;">
-
   <h1>Tempête Alex - 2020</h1>
 
  </header>
+
+ <nav class="navbar">
+        <a href="#" class="logo">
+
+          <img src="LogoInrae.png" style="height: 50px; padding-top: 30%; padding-left: 30%;">
+
+        </a>
+        <label for="btn" class="icon">
+            <svg viewBox="0 0 100 80" width="40" height="40">
+                <rect width="100" height="15"></rect>
+                <rect y="35" width="100" height="15"></rect>
+                <rect y="70" width="100" height="15"></rect>
+            </svg>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#">Retour au portail</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Description de l'événement</a>
+            </li>
+            <li class="nav-item">
+                <a href="#">Dimension multirisque</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Prévention des risques majeurs</a>
+          </li>
+    </nav>
 
   <div class="container">
     <div class="text-section">
       <h1>Contexte météorologique</h1>
       <p>Du 1er au 3 octobre 2020, la tempête Alex frappe la France d'ouest en est et plus largement l'Europe. La tempête est caractérisée par des vents violents, atteignant parfois plus de 185 km/h, et de fortes pluies orageuses.
         <br><br>
-        Le 1er octobre, Météo France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluies-inondables et d'orages. Le département du Morbihan est quant à lui placé en vigilance rouge en raison des vents violents.
+        Le 1er octobre, Météo-France déclare une première alerte orange pour la Bretagne et le sud-est de la France. La vigilance orange englobe les risques de crues, de submersions marines, de pluies-inondables et d'orages. Le département du Morbihan est quant à lui placé en vigilance rouge en raison des vents violents.
         <br><br>
         La situation va rapidement évoluer car tôt dans la matinée du 2 octobre, une nouvelle alerte va placer le département des Alpes-Maritimes en vigilance rouge pour pluie et inondation.
         <br><br>
-        La carte ci-contre vous permet de naviguer entre l'alerte du 1er octobre et celle du 2 octobre de Météo France, afin de vous rendre compte de l'évolution de la tempête Alex. <br><br> <br><br> </p>
-    
+        La carte ci-contre vous permet de naviguer entre l'alerte du 1er octobre et celle du 2 octobre de Météo-France, afin de vous rendre compte de l'évolution de la tempête Alex. <br><br> <br><br> </p>
+        <a href="https://www.francebleu.fr/infos/meteo/tempete-alex-suivez-l-evolution-des-intemperies-dans-les-alpes-maritimes-1601696966" title="source de l'image"; target="_blank;">
         <img src="https://www.francebleu.fr/s3/cruiser-production/2020/10/66ada526-bf54-4f52-8278-9e0388966e02/1200x680_000_8rb8y7.jpg" style= "height: 422px;">
-      
+        </a>
       </div>
     <div class="iframe-section">
       <h1>Alertes de Météo-France</h1>
@@ -112,10 +183,8 @@ header {
   <div class="container">
     <div class="iframe-section">
       <h1>Vidéo tempête Alex</h1>
-      <a href="https://www.francebleu.fr/infos/meteo/tempete-alex-suivez-l-evolution-des-intemperies-dans-les-alpes-maritimes-1601696966" title="source de l'image">
-      <iframe src="https://www.youtube.com/embed/6KXGI63qWHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </a>
-    </div>
+           <iframe src="https://www.youtube.com/embed/6KXGI63qWHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
     <div class="text-section">
       <h1>Retour sur l'évènement</h1>
       <p>texte</p>
